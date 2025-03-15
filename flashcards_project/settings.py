@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+     # Note: Adding any new apps to INSTALLED_APPS allows Django to manage the app's resources, perform database migrations, and make the app's functionality available to your project
     'cards.apps.CardsConfig'
 ]
 

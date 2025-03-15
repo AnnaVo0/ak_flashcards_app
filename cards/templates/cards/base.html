@@ -1,0 +1,23 @@
+<!-- Django automatically looks for templates in a subdirectory named templates within each app's directory -->
+<!-- Each app in our project can have its own templates folder. This allows us to keep app-specific templates separate from templates used across the entire project -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AK Flashcards</title>
+</head>
+
+<body>
+    <header>
+        <h1>Arknights Flashcards App</h1>
+    </header>
+    <main>
+        <!-- The below is a template block that child templates can override. If no child template overrides the content block, then the content in the block will show. -->
+        {% block content %}
+        <h2>Arknights-themed Flashcards App</h2>
+        {% endblock content %}
+    </main>
+</body>
+
+</html>
